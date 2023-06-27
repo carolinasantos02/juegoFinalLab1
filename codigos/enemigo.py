@@ -35,7 +35,7 @@ class Enemigo:
             self.animacion = self.caminar_d
         elif self.orientacion == IZQUIERDA:
             self.frame = 0
-            self.move_x = -self.velocidad_caminata  # Asignar valor negativo para mover hacia la izquierda
+            self.move_x = -self.velocidad_caminata
             self.animacion = self.caminar_i
 
         self.rect.x += self.move_x  # ACTUALIZAR POSICION

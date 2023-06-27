@@ -108,8 +108,6 @@ class Personaje:
         #dejo de actualizar en el loop principal
         self.tiempo_transcurrido += delta_ms
         if self.tiempo_transcurrido >= self.frame_rate_ms:
-            # if (self.inicio_de_salto - self.rect.y) > self.altura_maxima_salto and self.esta_saltando:
-            #     self.move_y = 0
 
             self.tiempo_transcurrido = 0
             if (self.frame < len(self.animacion) -1):
@@ -125,8 +123,7 @@ class Personaje:
 
             if(self.rect.y < 600):
                 self.rect.y += self.gravedad
-                self.rect_pies.y += self.gravedad  # Aplicar gravedad al rectángulo de los pies
-
+                self.rect_pies.y += self.gravedad 
             if (self.esta_en_plataforma(lista_p)) == False:
                 self.mover_rect_juntos_y(self.gravedad)
             

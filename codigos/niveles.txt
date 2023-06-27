@@ -1,0 +1,27 @@
+NIVEL 1:
+imagen_fondo = pygame.image.load("recursos\\Assets\\locations\\set_bg_01\\mountain\\all.png").
+jugador = Personaje(0, 650, 0, 0, 6, 8, 16, 25)
+barra_superior = Barra(jugador)
+lista_enemigos.append(Enemigo(500, 650, 0, 0, 2, 8, 25))
+lista_frutas.append(Fruta(905, 200))
+lista_plataformas.append(Plataforma(700, 500, 80, 80, 1))
+lista_plataformas.append(Plataforma(900, 250, 80, 80, 1))
+
+NIVEL 2:
+imagen_fondo = pygame.image.load("recursos\\Assets\\locations\\set_bg_01\\city\\all.png")
+jugador = Personaje(900, 600, 0, 0, 6, 8, 16, 25)
+barra_superior = Barra(jugador)
+lista_enemigos.append(Enemigo(350, 675, 0, 0, 2, 8, 25))
+lista_frutas.append(Fruta(50, 375))
+lista_plataformas.append(Plataforma(50, 400, 80, 80, 1))
+
+NIVEL 3:
+imagen_fondo = pygame.image.load("recursos\\Assets\\locations\\set_bg_01\\forest\\all.png")
+jugador = Personaje(0, 600, 0, 0, 6, 8, 16, 25)
+barra_superior = Barra(jugador)
+lista_enemigos.append(Enemigo(400, 450, 0, 0, 2, 8, 25))
+lista_frutas.append(Fruta(900, 475))
+lista_plataformas.append(Plataforma(200, 500, 80, 80, 1))
+lista_plataformas.append(Plataforma(900, 500, 80, 80, 1))
+lista_plataformas.append(Plataforma(480, 500, 80, 80, 1))
+lista_plataformas.append(Plataforma(400, 500, 80, 80, 1))
