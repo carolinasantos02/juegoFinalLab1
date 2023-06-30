@@ -53,7 +53,7 @@ while True:
             aux_form_active.update(lista_eventos,keys,delta_ms)
         aux_form_active.draw()
 
-    # print(aux_form_active)
+
 
     pygame.display.flip()
 
