@@ -70,5 +70,3 @@ while True:
 
 
     pygame.display.flip()
-
-

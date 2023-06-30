@@ -4,7 +4,7 @@ from funciones import *
 from enemigo import *
 import time
 from bala import *
-
+from gui_form import *
 
 
 class Personaje:
@@ -18,7 +18,8 @@ class Personaje:
 
         self.salto_d = Funciones.obtener_superficie_del_sprite("recursos\\Assets\\players\\green_hat\\jump.png", 33, 1, False, 1)
         self.salto_i = Funciones.obtener_superficie_del_sprite("recursos\\Assets\\players\\green_hat\\jump.png", 33, 1, True, 1)
-
+    
+        self.cronometro = 30
         self.frame = 0
         self.vidas = 3
         self.puntos = 0
@@ -69,6 +70,10 @@ class Personaje:
         if orientacion == IZQUIERDA:
             self.move_x = -self.velocidad_caminata
             self.animacion = self.caminar_i
+        if self.rect.x < 0:
+            self.rect.x = 0
+        if self.rect.x > 910:
+            self.rect.x = 910
 
     def disparar(self):
         if self.orientacion == DERECHA:
@@ -90,6 +95,8 @@ class Personaje:
                 self.animacion = self.salto_i
             self.frame = 0
             self.esta_saltando = True
+
+            
             
 
     def estar_quieto(self):

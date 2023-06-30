@@ -1,0 +1,13 @@
+{
+    "nivel_1": {
+      "player_1": "Personaje(0, 600, 0, 0, 6, 8, 16, 25)",
+      "enemigo": "Enemigo(400, 450, 0, 0, 2, 8, 25)",
+      "plataformas": [
+        "Plataforma(200, 500, 80, 80, 1)",
+        "Plataforma(200, 500, 80, 80, 1)",
+        "Plataforma(480, 500, 80, 80, 1)",
+        "Plataforma(480, 500, 80, 80, 1)"
+      ],
+      "fruta": "Fruta(900, 475)"
+    }
+  }

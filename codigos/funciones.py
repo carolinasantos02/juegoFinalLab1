@@ -1,9 +1,10 @@
 import pygame
 from constantes import *
 
+pygame.mixer.init()
 
 class Funciones:
-
+    
     def obtener_superficie_del_sprite(path,columnas,filas,flip=False, step = 1):
         lista = []
         superficie_imagen = pygame.image.load(path)
@@ -19,3 +20,8 @@ class Funciones:
                     superficie_fotograma = pygame.transform.flip(superficie_fotograma,True,False)
                 lista.append(superficie_fotograma)
         return lista
+    
+    def generar_sonido(path: str, volumen: float):
+        sonido = pygame.mixer.Sound(path)
+        sonido.set_volume(volumen)
+        return sonido
